@@ -1,4 +1,5 @@
 import { addItemToList } from './options.js';
+import {askConfirm} from './consts.js';
 
 // Initialize a Set to keep track of current items for easy lookup
 export let currentItems = new Set();
@@ -28,8 +29,18 @@ export function saveItems() {
 
 export function deleteItem(li) {
     const url_name = li.textContent;
-    li.parentNode.removeChild(li);
-    currentItems.delete(url_name); // Remove the URL from the Set
-    console.log('Removed ' + url_name + ' from blocked urls');
-    saveItems(); // Save the current state of items after deletion
+    let cnt = 0;
+    while (cnt < 4) {
+        if (confirm(`Are you sure you want me to remove this website block?? ${askConfirm[cnt]}`))
+            cnt++;
+        else break;
+    }
+    if (cnt === 4) {
+        li.parentNode.removeChild(li);
+        currentItems.delete(url_name); // Remove the URL from the Set
+        console.log('Removed ' + url_name + ' from blocked urls');
+        saveItems(); // Save the current state of items after deletion
+    } else {
+        alert('What a good boy, good job on not resisting the temptations!');
+    }
 }
