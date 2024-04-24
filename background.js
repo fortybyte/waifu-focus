@@ -1,6 +1,6 @@
 chrome.action.onClicked.addListener(function() {
     chrome.tabs.create({url: "options.html"});
-  });
+});
 //broken file
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     if (changeInfo.status === 'complete') {
