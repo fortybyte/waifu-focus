@@ -1,5 +1,6 @@
 import { addItemToList } from './options.js';
 import {askConfirm} from './consts.js';
+import {coins} from './gacha.js';
 
 // Initialize a Set to keep track of current items for easy lookup
 export let currentItems = new Set();
@@ -43,4 +44,19 @@ export function deleteItem(li) {
     } else {
         alert('What a good boy, good job on not resisting the temptations!');
     }
+}
+export function goToGacha() {
+    window.location.href = 'gacha.html';
+}
+export function saveCollection() {
+
+}
+export function getCollection() {
+
+}
+export function saveCoins() {
+
+}
+export function getCoins() {
+    return 10000;
 }
