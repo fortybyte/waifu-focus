@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const butt = document.getElementById('additembutt');
     butt.addEventListener('click', addItem);
 
+    const butt2 = document.getElementById('gachaLink');
+    butt2.addEventListener('click', Utils.goToGacha);
+
     Utils.loadItems();
 });
 

@@ -1,3 +1,4 @@
+//TODO: based on user visiting to websites, reward or penalize
 chrome.action.onClicked.addListener(function() {
     chrome.tabs.create({url: "options.html"});
 });

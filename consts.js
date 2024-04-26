@@ -23,7 +23,25 @@ export const messages = [
     "Hmm, if it were up to me, we'd never come here. Let's move on, shall we?",
     "Uh-oh, I’m getting that disappointed feeling again. Let’s go somewhere better!",
     "Is this really where you want to be? I think we can do much better!",
-    "."
+    ".",
+    "Nyan! You clicked there again? Let's keep our paws on the right track, okay?",
+    "Hehe, trying to sneak off? Let's stay focused, baka!",
+    "Moe moe kyun! Let's turn your attention back to something more adorable, like work!",
+    "Nyaa~ You're straying away again? Let's not wander off the productivity path!",
+    "Uh-oh, senpai! That site is a no-no! Let's stick to our goals, hm?",
+    "Huhu, caught you! Let's put that curiosity to better use, shall we?",
+    "Aww, you're being a naughty kouhai clicking there! Time to get serious, right?",
+    "Ehehe, that's the naughty list! Let's stay on the nice list, senpai!",
+    "Oi oi, diving into distractions again? We have better quests to complete!",
+    "Wah! Not the best choice, senpai! Let's find something more kawaii to do!",
+    "Goshujin-sama, this isn't where we should be! Let's go somewhere more productive!",
+    "Kyaa~! Let’s not waste our time there, we have much cuter things to do!",
+    "Bzzt! Wrong turn, senpai! Let's redirect to something more worthwhile!",
+    "Hmph, I’m not impressed! Let’s work on something more exciting, okay?",
+    "Oh my, wandering off the path? Let’s get back to it, chop chop!",
+    "Senpai, notice your tasks, not those tabs!",
+    "Desu ne~? Wrong click! Let’s correct that and move on to something better!",
+    "Awww, sneaky-senpai! Let’s get back on track, ne?"
 ];
 
 export const askConfirm = [
@@ -33,3 +51,12 @@ export const askConfirm = [
     "No stopping you is there?",
     "It would make me quite sad."
 ]
+
+export let pool = [
+    2,3,4,5,6,7,8,9,10,11,12,13,14,15
+]
+export let has = [
+    1
+]
+
+export const wish_req = 90;
